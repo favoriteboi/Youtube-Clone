@@ -1,0 +1,80 @@
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 16px;
+}
+
+/*remember that this deals with how our media will be be displayed on different screen sizes*/
+@media (max-width: 750px) {
+  .video-grid {
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .video-title, .video-author, .video-stats {
+    font-size: 14px;
+  }
+  
+}
+
+
+.thumbnail-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+.video-time {
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  font-family: roboto, arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 35px;
+  border-radius: 25px;
+}
+.video-sum {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+.video-author {
+  margin-bottom: 4px;
+}

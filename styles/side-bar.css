@@ -1,0 +1,69 @@
+@media (max-width: 1200px) {
+  .side-bar {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    left: 0;
+    top: 55px;
+    width:72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .side-bar-link {
+    cursor: pointer;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .side-bar-link div {
+    font-family: roboto, arial;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+  
+  .side-bar-link:hover {
+    background-color: rgb(237, 237, 238) ;
+  }
+  .home-icon, .explore-icon, .subscription-icon, .original-icon, .youtube-music-icon, .library-icon {
+    height: 24px;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .side-bar {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    top: 55px;
+    bottom: 0;
+    z-index: 200;
+    padding-top: 10px;
+  }
+  
+  .side-bar-link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0px 10px 25px;
+    font-size: 15px;
+    
+     
+   }
+
+   .side-bar-link:hover{
+    background-color:rgb(237, 237, 238);
+   }
+  .home-icon,
+  .explore-icon,
+  .original-icon,
+  .youtube-music-icon,
+  .subscription-icon,
+  .library-icon {
+    height: 24px;
+    margin-right: 10px;
+  }
+}
